@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from turtle import title
+#from turtle import title
 from django.contrib.auth import authenticate, login, logout
 from django.db import IntegrityError
 from django.http import HttpResponse, HttpResponseRedirect
