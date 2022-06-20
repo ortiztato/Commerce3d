@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-AU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}eMarket{% endblock %}</title>
+    <link href="{% static 'auctions/templates.css' %}" rel="stylesheet">
+    <link href="{% static 'auctions/main.css' %}" rel="stylesheet">
+    <link href="{% static 'auctions/navbar.css' %}" rel="stylesheet">
+    <script defer src="{% static 'app.js' %}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <header class="topheader">
+            <nav class="topnav">
+                <a href="{% url 'index' %}" class="logo" id="network">
+
+                    <img src="{% static 'media/bagheart.svg' %}" alt="home" height="30px" />
+
+                    <img src="{% static 'media/eMkt.png' %}" alt="home" height="50px" />
+                </a>
+                <button class="open-menu" aria-label="Open menu">
+                    <img src="{% static 'media/hamburger-icon.svg' %}" alt="abrir menú" height="20px" />
+                </button>
+                <ul class="menu">
+                    <button class="close-menu" aria-label="Close menu">
+                        <img src="{% static 'media/close-icon.svg' %}" alt="cerrar menú" />
+                    </button>
+                    {% if user.is_authenticated %}
+                    <li>
+                        <a id="nametitle"><strong>{{user.username}}</strong></a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a><strong>Not signed in.</strong></a>
+                    </li>
+                    {% endif %}
+                    <li>
+                        <a href="{% url 'index' %}" id="allposts">Active Listings</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'createauction' %}">Create Auction</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'categories' %}">Categories</a>
+                    </li>
+
+                    {% if user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'logout' %}">Log Out</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'watchlist' %}">My Watchlist</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{% url 'login' %}">Log In</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'register' %}">Register</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="hero" style="background-image: 
+        linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+        url('{% static 'media/heroecommerce.jpg'%}')">
+            <p class="bestdeals">BEST DEALS </p>
+            <p class="unbeatprices">UNBEATABLE PRICES</p>
+        </section>
+
+
+        <section id="bodysection">
+            <div class="divbody">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Santiago Ortiz Basualdo</p>
+        </div>
+    </footer>
+</body>
+
+</html>

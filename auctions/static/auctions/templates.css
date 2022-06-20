@@ -1,0 +1,836 @@
+.maincontainer {
+    margin: 0;
+    padding: 0;
+    min-height: 90vh;
+}
+
+/* HERO */
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 15vh;
+    padding-top: 85px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+.bestdeals {
+    color: whitesmoke;
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+
+}
+
+.unbeatprices {
+    color: whitesmoke;
+    margin: 0;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/* BODY section */
+
+#bodysection {
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 90px;
+
+}
+
+
+/* INDEX TEMPLATE */
+
+.activelistingsdisplay .card {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(246, 241, 241);
+    margin-top: 3px;
+    display: flex;
+    height: 150px;
+
+}
+
+.activelistingsdisplay .cardimage {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.activelistingsdisplay img {
+    object-fit: contain;
+    width: 97%;
+    height: 100%;
+    margin-left: 3px;
+    margin: 0;
+}
+
+/* .cardtitle{margin: 0;color: black; text-decoration: none;"} */
+.activelistingsdisplay h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.activelistingsdisplay h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: normal
+}
+
+.activelistingsdisplay h6 {
+    font-size: 16px;
+    margin: 0px;
+    color: rgb(4, 177, 85);
+    font-weight: normal;
+}
+
+.activelistingsdisplay p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.abutton {
+    font-size: 12px;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    margin: 1px;
+    vertical-align: middle;
+}
+
+.seemorebutton {
+    padding: 0.3em 0.7em;
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: var(--button-color);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.activelistingsdisplay .cardbody {
+    margin-left: 10%;
+}
+
+/* AUCTION TEMPLATE */
+
+#secauction {
+    /* justify-content: center;
+    align-items: center; */
+    text-align: left;
+
+}
+
+.secauction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+.secauction-container-img {
+    height: 50%;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.secauction-container-img img {
+    object-fit: contain;
+    width: 95%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.secauction-container-titulo {
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: 400;
+    display: block
+}
+
+.secauction-container-titulo-desktop {
+    display: none;
+    font-size: 28px;
+    margin-left: 0px;
+    font-weight: 400;
+}
+
+.secaution-container-text {
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.secauction-container-description {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.secauction-container-category {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.secauction-container-initbid {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: rgb(162, 164, 163);
+}
+
+.secauction-container-price {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(4, 177, 85);
+}
+
+.secauction-container-watchlist a {
+    font-size: 14px;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    /* margin: 1px; */
+    vertical-align: middle;
+}
+
+.secauction-container-watchlist button {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: var(--button-color);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    vertical-align: middle;
+    padding: 1px;
+}
+
+
+.placebidsection {
+    margin-left: 10px;
+}
+
+.formplacebid input {
+    margin: 2px 0px;
+}
+
+.bidsubmitbutton {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    /* box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    background-color: rgb(7, 198, 99);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.commentsection {
+    margin-left: 10px;
+}
+
+.bidinput {
+    width: 130px;
+}
+
+.inputcloseauction {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    /* box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    background-color: rgb(235, 22, 22);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+.placecommentinput {
+    margin-top: 5px;
+    width: 90%;
+}
+
+.submitcomment {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    /* box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    background-color: rgb(190, 190, 190);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+/* TEMPLATE CREATE AUCTION */
+
+.createlistings {
+    margin-left: 10px;
+}
+
+.createlistings input {
+    margin-top: 5px;
+}
+
+.inputlarge {
+    width: 95%;
+}
+
+.createlistings select {
+    margin-top: 5px;
+}
+
+
+
+/* TEMPLATE LOGIN */
+
+.loginsection {
+    margin-left: 10px;
+}
+
+.loginsection input {
+    margin-top: 5px;
+}
+
+.loginsection form {
+    margin-bottom: 5px;
+}
+
+.loginsubmit {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    /* box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    background-color: var(--button-color);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* REGISTER TEMPLATE */
+
+.registersection {
+    margin-left: 10px;
+}
+
+.registersection input {
+    margin-top: 5px;
+    width: 70%;
+}
+
+#registerbutton {
+    width: auto;
+}
+
+/* CATEGORIES TEMPLATE */
+
+.categoriessection {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.categoriessection h2 {
+    margin-bottom: 40px;
+}
+
+.categoriessection ul {
+    padding: 0;
+}
+
+.categoriessection li {
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 100;
+
+}
+
+.acategory {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* CATEGORIES TEMPLATE */
+
+/* .categoriessection {
+    margin-left: 10px;
+}
+
+.categoriessection li {
+    margin-top: 5px;
+} */
+
+/* INDEX BY CATEGORIES TEMPLATE */
+
+/* WATCHLIST TEMPLATE  */
+
+.watchlistsection {
+    margin-left: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(230, 230, 230);
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 850px) {
+
+    /* HERO */
+
+    #hero {
+        height: 30vh;
+    }
+
+    .bestdeals {
+        color: whitesmoke;
+        margin: 0;
+        font-weight: 700;
+        font-size: 30px;
+
+    }
+
+    .unbeatprices {
+        color: whitesmoke;
+        margin: 0;
+        font-weight: 900;
+        font-size: 38px;
+        margin-bottom: 7px;
+    }
+
+    /* ACTIVE LISTINGS */
+
+    .activelistingsdisplay .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .activelistingsdisplay .card {
+        border-style: solid;
+        border-color: rgb(246, 241, 241);
+        margin: 3px;
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        width: 350px;
+
+    }
+
+    .activelistingsdisplay .cardimage {
+        width: 40%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    .activelistingsdisplay img {
+        object-fit: contain;
+        width: 97%;
+        height: 100%;
+        margin-left: 3px;
+        margin: 0;
+    }
+
+    .activelistingsdisplay .cardbody {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* .cardtitle{margin: 0;color: black; text-decoration: none;"} */
+    .activelistingsdisplay h2 {
+        font-size: 22px;
+        font-weight: 300;
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    .activelistingsdisplay h5 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: normal
+    }
+
+    .activelistingsdisplay h6 {
+        font-size: 16px;
+        margin: 0px;
+        color: rgb(4, 177, 85);
+        font-weight: normal;
+    }
+
+    .activelistingsdisplay p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .abutton {
+        font-size: 12px;
+        font-weight: 550;
+        color: white;
+        text-decoration: none;
+        margin: 1px;
+        vertical-align: middle;
+    }
+
+    .seemorebutton {
+        padding: 0.3em 0.7em;
+        border-radius: 5px;
+        border: 0px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: var(--button-color);
+        margin-top: 0px;
+        margin-bottom: 10px;
+        width: 90px;
+    }
+
+
+
+    /* AUCTION TEMPLATE */
+
+    #secauction {
+        /* justify-content: center;
+        align-items: center; */
+        text-align: left;
+        /* border: 1px solid rgb(218, 218, 218); */
+        padding: 10px;
+        margin: 10px;
+        /* background-color: white; */
+
+    }
+
+    .secauction-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+
+    .secauction-container-img {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .secauction-container-img img {
+        object-fit: contain;
+        width: 95%;
+        height: 100%;
+        max-height: 350px;
+        margin: 0;
+
+    }
+
+    .secauction-container-titulo {
+        font-size: 28px;
+        margin-left: 30px;
+        font-weight: 400;
+        display: none;
+    }
+
+    .secauction-container-titulo-desktop {
+        display: block;
+        font-size: 28px;
+        margin-left: 0px;
+        font-weight: 400;
+    }
+
+    .secaution-container-text {
+        margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .secauction-container-description {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    .secauction-container-category {
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .secauction-container-initbid {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: rgb(162, 164, 163);
+    }
+
+    .secauction-container-price {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: rgb(4, 177, 85);
+    }
+
+    .secauction-container-watchlist a {
+        font-size: 14px;
+        font-weight: 550;
+        color: white;
+        text-decoration: none;
+        margin: 1px;
+        vertical-align: middle;
+    }
+
+    .secauction-container-watchlist button {
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        border: 0px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: var(--button-color);
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .secauction-container-watchlist a {
+        font-size: 14px;
+        font-weight: 550;
+        color: white;
+        text-decoration: none;
+        margin: 1px;
+        vertical-align: middle;
+    }
+
+    .secauction-container-watchlist button {
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        border: 0px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: var(--button-color);
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 550;
+        vertical-align: middle;
+    }
+
+    .placebidsection {
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .formplacebid input {
+        margin: 2px 0px;
+    }
+
+    .commentsection {
+        margin-left: 10px;
+    }
+
+    .bidinput {
+        width: 130px;
+    }
+
+    .inputcloseauction {
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        border: 0px solid rgba(0, 0, 0, 0.3);
+        /* box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 550;
+        text-decoration: none;
+        background-color: rgb(235, 22, 22);
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        cursor: pointer
+    }
+
+    .placecommentinput {
+        margin-top: 5px;
+        width: 90%;
+    }
+
+    /* TEMPLATE CREATE AUCTION */
+
+    .createlistings {
+        margin-left: 10px;
+    }
+
+    .createlistings input {
+        margin-top: 5px;
+    }
+
+    .inputlarge {
+        width: 95%;
+    }
+
+    .createlistings select {
+        margin-top: 5px;
+    }
+
+    /* TEMPLATE LOGIN */
+
+    .loginsection {
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .loginsection input {
+        margin-top: 5px;
+    }
+
+    .loginsection form {
+        margin-bottom: 5px;
+    }
+
+    .loginsubmit {
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        border: 0px solid rgba(0, 0, 0, 0.3);
+        /* box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 550;
+        text-decoration: none;
+        background-color: var(--button-color);
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        cursor: pointer
+    }
+
+    /* REGISTER TEMPLATE */
+
+    .registersection {
+        margin-left: 10px;
+    }
+
+    .registersection input {
+        margin-top: 5px;
+        width: 70%;
+    }
+
+    #registerbutton {
+        width: auto;
+    }
+
+    /* CATEGORIES TEMPLATE */
+
+    /*     .categoriessection {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .categoriessection h2 {
+        margin-bottom: 40px;
+    }
+
+    .categoriessection ul {
+        padding: 0;
+    }
+
+    .categoriessection li {
+        margin-top: 20px;
+        list-style-type: none;
+        font-size: 20px;
+    }
+ */
+    /* INDEX BY CATEGORIES TEMPLATE */
+
+    /* WATCHLIST TEMPLATE  */
+
+    .watchlistsection {
+        margin-left: 10px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: rgb(230, 230, 230);
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 12px;
+        margin: 0;
+        padding: 12px;
+        color: rgb(100, 100, 100);
+    }
+
+    footer .container {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

@@ -1,0 +1,33 @@
+:root {
+    --theme-color: rgb(248, 248, 248);
+    --primary-color: rgb(252, 236, 96);
+    --secundary-color: #F7C331;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460;
+    --button-color: rgb(49, 94, 240)
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--button-color);
+    font-weight: 500;
+}
+
+hr {
+    border-left: none;
+    border-bottom: none
+}
+
+;

@@ -1,0 +1,31 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+<section class="activelistingsdisplay">
+    <h2>Active Listings</h2>
+    <div class="container">
+
+        {% for auction in auctions %}
+        {% if auction.active %}
+        <div class="card">
+            {% if auction.image %}
+            <div class="cardimage">
+                <img src="{{ auction.image.url }}" alt="{{ auction.title }}">
+            </div>
+            {% endif %}
+            <div class="cardbody">
+                <h5 class="cardtitle">{{ auction.title }}</h5>
+                <h6>USD {{ auction.price }}-</h6>
+                <p>{{ auction.description }} </p>
+                <button class="seemorebutton">
+                    <a class="abutton" href="{% url 'auctiondetails' auction.title %}">See More</a>
+                </button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
