@@ -228,7 +228,6 @@
     font-size: 14px;
     font-weight: 550;
     vertical-align: middle;
-    padding: 1px;
 }
 
 
@@ -635,25 +634,6 @@ footer .container {
         color: rgb(4, 177, 85);
     }
 
-    .secauction-container-watchlist a {
-        font-size: 14px;
-        font-weight: 550;
-        color: white;
-        text-decoration: none;
-        margin: 1px;
-        vertical-align: middle;
-    }
-
-    .secauction-container-watchlist button {
-        padding: 0.5em 1em;
-        border-radius: 5px;
-        border: 0px solid rgba(0, 0, 0, 0.3);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: white;
-        background-color: var(--button-color);
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
 
     .secauction-container-watchlist a {
         font-size: 14px;
