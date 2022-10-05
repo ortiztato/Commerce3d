@@ -18,10 +18,14 @@ def index(request):
         "bids": Bid.objects.all()
     })
 
+# renders the page to create auctions
+
 def create(request):
     return render(request, "auctions/createauction.html",{
         "categories": Category.objects.all()
     })
+
+# user authentication
 
 def login_view(request):
     if request.method == "POST":
@@ -47,6 +51,8 @@ def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse("index"))
 
+
+# user registration
 
 def register(request):
     if request.method == "POST":
@@ -74,6 +80,9 @@ def register(request):
     else:
         return render(request, "auctions/register.html")
 
+
+# request to create an auction
+
 def fromcreate(request):
     if request.method == "POST":
         title = request.POST["title"]
@@ -89,6 +98,9 @@ def fromcreate(request):
         f.bid.add(bid1)
     return HttpResponseRedirect(reverse("index"))
 
+
+    # render an especific auction
+
 def auctiondetails(request, auction):
     g = Auction.objects.get(title=auction)
     comments = g.comments.all()
@@ -103,6 +115,9 @@ def auctiondetails(request, auction):
 
     })
 
+
+    # place a bid for an auction
+
 def placebid(request, auction):
     g = Auction.objects.get(title=auction)
     pricebidder=request.user
@@ -115,11 +130,16 @@ def placebid(request, auction):
         g.bid.add(bid1)
     return HttpResponseRedirect(reverse("auctiondetails", args=[auction]))
 
+
+
 def closeauction(request, auction):
     g = Auction.objects.get(title=auction)
     g.active=False
     g.save()
     return HttpResponseRedirect(reverse("auctiondetails", args=[auction]))
+
+
+# post a comment
 
 def comment(request, auction):
     g = Auction.objects.get(title=auction)
@@ -130,6 +150,9 @@ def comment(request, auction):
         g.comments.add(comment1)
     return HttpResponseRedirect(reverse("auctiondetails", args=[auction]))
 
+
+# add an auction to the watchlist
+
 def changewatch(request, auction):
     g = Auction.objects.get(title=auction)
     if request.user in g.watchuser.all():
@@ -137,6 +160,9 @@ def changewatch(request, auction):
     else: 
         g.watchuser.add(request.user)
     return HttpResponseRedirect(reverse("auctiondetails", args=[auction]))
+
+
+# renders the user watchlist
 
 def watchlist(request):
     g = request.user
@@ -147,11 +173,18 @@ def watchlist(request):
 
     })
 
+
+
+# renders the list of categories
+
 def categories(request):
     return render(request, "auctions/categoriesindex.html",{
         "categories": Category.objects.all()
 
     })
+
+
+# renders auctions by categories
 
 def category(request, categorytype):
     categorytype = categorytype

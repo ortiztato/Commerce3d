@@ -1,3 +1,6 @@
+
+// script to open and close de nav on mobile
+
 const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
@@ -9,4 +12,4 @@ function toggleMenu() {
 openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
 
-function alertlogin () {alert ("You need to sign in first")}
+function alertlogin() { alert("You need to sign in first") }
